@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reinitialization
+        //its possible
+        let a = 10;
+        console.log(a); //10
+        a = 20;
+        console.log(a); //10
+
+
+        //redeclaration
+        //its not possible
+        let b = 20;
+        <!-- let b = 30; -->
+        console.log(b); //syntax error
+
+        
+        //scope of variable
+        console.log("Start");
+        if (true){
+            let c = 10;
+            console.log(c);
+        }
+      //  console.log(c);  // it will give not defined
+
+        //hoisting
+        //its not possible
+
+        host = "hoisting";
+        let = host;
+        console.log(host);
+
+
+
+    </script>
+</body>
+</html>

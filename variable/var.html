@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reinitialization
+        var a = 10;
+        console.log(a); //10
+        a = 20 //updated value
+        console.log(a); //20
+
+        //redeclaration
+        var b = 30;
+        var b = 40;
+        console.log(b) //40
+
+        //scope of variable
+        console.log("Start");
+        var c = 50;
+        {
+            console.log(c); //50
+
+        }
+        console.log(c);
+
+        //hoisting
+        hoisting = "Host";
+        var hosting;
+        console.log(hosting);
+
+    </script>
+</body>
+</html>

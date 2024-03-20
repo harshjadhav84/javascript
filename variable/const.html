@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reinitialization
+        //not possible
+        console.log("const keyword");
+        const a = 10;
+        console.log(a);
+        //a = 80;
+        //console.log(a);   error
+
+        //redeclaration
+        //not possible
+        const b = "red";
+        //const b = "white";
+
+        //scope of variable
+        //it is block of scope works within onlt class
+        console.log("Start");
+        if(true){
+            const c = 10;
+            console.log(c); //10
+        }
+        //console.log(c);
+
+        //hoisting
+        //not possible
+        d = 10
+        //const d;
+        console.log(d);
+
+
+
+    </script>
+</body>
+</html>
