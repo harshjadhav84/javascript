@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30];
+        console.log(arr);
+
+        //unshift
+        arr.unshift("gk", 12.7);
+        console.log(arr);
+
+        //shift
+        console.log(arr.shift());
+
+        //push
+        arr.push(20,30,50);
+        console.log(arr);
+
+        //pop
+        console.log(arr.pop());
+
+        //sort
+        let sort1 =[10,20,100,2000,"apple", "fruit"]
+        console.log(sort1.sort());
+
+        //include
+        console.log(sort1.includes(10));
+
+        //indexof
+        console.log(sort1.indexOf(2000));
+
+        //slice
+        let arr2 = [10,20,30,40,40];
+        console.log(arr2);
+        console.log(arr2.slice(2,4));
+
+        //splice
+        console.log(arr2.splice(2,3,"hello", "harsh"));
+        console.log(arr2);
+    </script>
+</body>
+</html>
