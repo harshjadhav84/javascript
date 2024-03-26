@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            key1 : "valye1",
+            key2 : "valye2",
+            key3 : "valye3",
+            key4 : "valye4",
+        }
+        console.log(obj);
+
+        //add () : add key and value pair
+        obj.key5 = "value5";
+        console.log(obj);
+
+        //delete() : delete key
+        delete(obj.key3);
+        console.log(obj);
+
+        //keys() : only keys will display
+        console.log(Object.keys(obj));
+
+        //value() : only values will diasplay
+        console.log(Object.values(obj));
+
+        //enteries() : convert object to array
+
+        console.log(Object.entries(obj));
+
+        //seal() : modify existance value and never add value pair
+        console.log(Object.seal(obj));
+        console.log(obj.key6 = "values6");
+        console.log(obj);
+
+        //assign() : merge two object using this but dont use duplicate values
+        let obj1 = {
+            key8:"value8",
+            key9:"value9",
+        }
+        let obj2 = {
+            key10:"value10",
+            key11:"value11",
+        }
+        console.log(Object.assign(obj1,obj2));
+
+        //freeze() : you canot modify existance key and value pair and never add value and pair
+        console.log(Object.freeze(obj));
+        console.log(obj.key7 = "value7");
+        console.log(obj);
+
+    </script>
+</body>
+</html>
