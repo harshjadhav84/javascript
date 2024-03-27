@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Emp(ename, eid, esal, eadhar){
+            this.ename=ename;
+            this.eid=eid;
+            this.esal=esal;
+            this.eadhar=eadhar;
+            this.getDetails=function(){
+                return "Emp name is" + this.ename + "Emp idis" + this.eid +
+                        "Emp salery is" + this.esal + "Emp adhar is" + eadhar
+            }
+        }
+
+        let Emp1 = new Emp("sagar", "aa@^", 3000, 37383783873);
+        console.log(Emp1);
+        
+        let Emp2 = new Emp("ganesh", "aa^", 30800, 83783873);
+        console.log(Emp2);
+
+        let Emp3 = new Emp("harsh", "aa^", 30000, 373883873);
+        console.log(Emp3);
+
+        Emp2.ename = "Aditya";
+        console.log(Emp2);
+    </script>
+</body>
+</html>
