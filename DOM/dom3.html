@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+
+    <script>
+        //by using class name.........
+        let para = document.getElementsByClassName("para");
+
+        para[0].innerHTML = "This is para1";
+        para[0].style.color= "red";
+        para[0].style.backgroundColor= "palegreen";
+
+        para[1].innerHTML = "This us para 2";
+        para[1].style.color = "black";
+        para[1].style.backgroundColor = "palevioletred"
+
+        para[2].innerHTML = "This is para 3";
+        para[2].style.color = " white";
+        para[2].style.backgroundColor = "black";
+
+    </script>
+</body>
+</html>

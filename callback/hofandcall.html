@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hof to perform operation
+        function operate(num1,num2,operation){
+            return operation(num1, num2);
+        }
+        //callback function for addition
+        function add(a,b){
+            return a+b;
+        }
+        //callback function for subtraction
+        function sub(a,b){
+            return a-b;
+        }
+
+        const result = operate(5,3, add);
+        const result1 = operate(10,4, sub);
+        console.log("result of addition is :" ,result );
+        console.log("result of sunstraction is :" ,result1 );
+
+
+    </script>
+</body>
+</html>

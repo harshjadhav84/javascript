@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function par1(name,callback){
+        return function(){
+            console.log("My name is" + name);
+            callback();
+        }
+       } 
+       function par2(){
+        console.log("callback function");
+       }
+       let par = par1("sita", par2);
+       par();
+       console.log(par());
+    </script>
+</body>
+</html>

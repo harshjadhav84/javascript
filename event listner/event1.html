@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="task()">Task perform</button>
+    <script>
+        function task(){
+            let ele = document.getElementById("box");
+            ele.style.height = prompt("Enter the height");
+            ele.style.width = prompt("Enter the width");
+            ele.style.backgroundColor=prompt("Enter the background color");
+            ele.style.border = prompt("Enter the border");
+            ele.style.borderRadius = prompt("enter the border radius");
+
+
+        }
+    </script>
+</body>
+</html>
