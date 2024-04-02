@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Voter Registration</legend>
+            <label for="vname">Voter Name :</label>
+            <input type="text" placeholder="enter full name">
+            <br>
+            <br>
+            <label for="bdate"> Birth Date :</label>
+            <input type="date" id="bd">
+            <br>
+            <br>
+    
+            <input type="button" value="CALCULATE" onclick="ageCalculate()">
+            <br>
+            <br>
+    
+            <label for="age" >AGE</label>
+            <input type="text" placeholder="Age" id="cal">
+            <br>
+            <br>
+    
+        <input type="submit" value="SUBMIT">
+        </fieldset>
+    </form>
+           
+    </fieldset>
+
+    <script>
+        function ageCalculator(){
+            var bd = document.getElementById("bd").value;
+            var dob = new Date(bd);
+            var now = new Date();
+            var age = now.getFullYear() - dob.getFullYear();
+            var monthDiff = now.getMonth() - dob.getDate();
+
+            if(monthDiff < 0 ||
+            (monthDiff === 0 && now.getDate() < dob.getDate()))
+            {
+                age--;
+            }
+            document.getElementById("cal").value=age
+        }
+    </script>
+</body>
+</html>

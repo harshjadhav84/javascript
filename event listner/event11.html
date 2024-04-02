@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" value="lets try to copy paste to me!!1">    
+<p id="print"></p>
+
+<script>
+    function getPaste() {
+        let pri = document.getElementById("print");
+        pri.innerHTML = "Your text pasted";
+        pri.style.fontSize = "20px"
+        pri.style.color = "red"
+        alert("your text is copied");
+    }
+</script>
+</body>
+</html>
