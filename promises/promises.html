@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pro = new Promise ((resolve, reject)=>{
+            setTimeout(() =>{
+                let wedding = "i promise you i will never leave you i will marry with you";
+                resolve(wedding);
+                reject("family is not ready to our marriage");
+            }, 2000);
+        })
+        pro.then((weddingFinal)=>{
+            console.log(weddingFinal);
+        }).catch((error)=>{
+            console.log("still family not ready for our marriage")
+        })
+    </script>
+</body>
+</html>
